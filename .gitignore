@@ -1,0 +1,9 @@
+accounts.txt
+balances.json
+*.log
+*.sqlite
+*.sqlite-*
+__pycache__/
+debug/
+opera-profile/
+next.conf

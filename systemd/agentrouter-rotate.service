@@ -1,0 +1,10 @@
+[Unit]
+Description=AgentRouter team sign-in, one pass over accounts.txt
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/share/agentrouter-rotate/run-and-reschedule.sh
+StandardOutput=append:%h/.local/share/agentrouter-rotate/scheduled.log
+StandardError=append:%h/.local/share/agentrouter-rotate/scheduled.log
+TimeoutStartSec=20min

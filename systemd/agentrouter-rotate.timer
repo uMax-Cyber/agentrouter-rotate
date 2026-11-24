@@ -1,0 +1,11 @@
+[Unit]
+Description=AgentRouter team sign-in, next run booked by run-and-reschedule.sh
+
+[Timer]
+# Replaced by timer.d/next.conf, which each run rewrites to 24h10m later.
+OnCalendar=2099-01-01 00:00:00
+AccuracySec=1s
+Persistent=true
+
+[Install]
+WantedBy=timers.target
